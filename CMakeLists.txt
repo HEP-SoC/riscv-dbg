@@ -12,14 +12,6 @@ project(riscv_dbg NONE)
 set(RISCV_DBG_VERSION 0.1.0 CACHE INTERNAL "Version of the RISCV Debugger IP")
 
 ######################################################################
-# Download and initialize the dependencies
-include(deps/deps.cmake)
-# This avoids the python dependencies to be re-installed (only done once at top-level)
-if(PROJECT_IS_TOP_LEVEL)
-    set(DEPS_INIT_DONE TRUE CACHE BOOL "Indicates deps have been initialized.")
-endif()
-
-######################################################################
 # Define the riscv debug pkg IP
 add_ip(${PROJECT_NAME}
     VENDOR pulp_platform
