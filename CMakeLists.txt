@@ -9,7 +9,7 @@ project(riscv_dbg NONE)
 
 ######################################################################
 # Set the IP version (checked in CI for consistency with git tag)
-set(RISCV_DBG_VERSION 0.0.10 CACHE INTERNAL "Version of the RISCV Debugger IP")
+set(RISCV_DBG_VERSION 0.1.0 CACHE INTERNAL "Version of the RISCV Debugger IP")
 
 ######################################################################
 # Download and initialize the dependencies
